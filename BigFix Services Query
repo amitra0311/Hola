@@ -1,0 +1,1 @@
+Get-Service -Computername (Get-Content -path “F:\Anirban\BigFix\servers.txt”) -Name BESClient, BESRelay, FillDB | Select-Object MachineName,Name,Displayname,Status | Sort-Object Status
